@@ -1,0 +1,4590 @@
+body
+{
+    margin: 0%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body, html
+{
+    height: 100%;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+header
+{
+    background-color: white;
+    z-index: 1;
+}
+
+@font-face {
+    font-family:"GeomanistThin";
+    src: url(/Assets/Fonts/Geomanist/GeomanistThin.ttf);
+}
+
+@font-face {
+    font-family: "GeomanistLight" ;
+    src: url(/Assets/Fonts/Geomanist/GeomanistLight.ttf);
+}
+
+.ham-menu
+{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.ham-menu span
+{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 25px;
+    padding: 2px;
+}
+
+/* Positions */
+
+.pos-rel
+{
+    position: relative;
+}
+
+.pos-abs
+{
+    position: absolute;
+}
+
+.pos-sticky
+{
+    position: sticky;
+}
+
+.pos-static
+{
+    position: static;
+}
+
+.pos-fixed
+{
+    position: fixed;
+}
+
+.index-0
+{
+    z-index: 0;
+}
+
+.index-1
+{
+    z-index: 1;
+}
+
+.index-2
+{
+    z-index: 2;
+}
+
+.index-3
+{
+    z-index: 3;
+}
+
+
+/* Display */
+
+.none 
+{
+    display: none;
+}
+
+.block
+{
+    display: block;
+}
+
+.in-block
+{
+    display: inline-block;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.in-flex
+{
+    display: inline-flex;
+}
+
+.grid
+{
+    display: grid;
+}
+
+.grid-col3-50
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 50%;
+    grid-gap: 5px;
+}
+
+.grid-col3-30
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30%
+}
+
+.grid-template-auto
+{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.align-items-center
+{
+    align-items: center;
+}
+
+.align-content-center
+{
+    align-content: center;
+}
+
+.justify-sa
+{
+    justify-content: space-around;
+}
+
+.justify-sb
+{
+    justify-content: space-between;
+}
+
+.f-dir-col
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.f-dir-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Color */
+
+.color-black
+{
+    color: black;
+}
+
+.color-white
+{
+    color: white;
+}
+
+.color-gray
+{
+    color: gray;
+}
+
+.bg-black
+{
+    background-color: black;
+}
+
+.bg-black-05
+{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.bg-white
+{
+    background-color: white;
+}
+
+.bg-white-05
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-gray
+{
+    background-color: gray;
+}
+
+/* Transitions */
+
+.tran-1s
+{
+    transition: 1s;
+}
+
+.tran-05s
+{
+    transition: 0.5s;
+}
+
+.flow-hidden
+{
+    overflow: hidden;
+}
+
+.opacity0
+{
+    opacity: 0%;
+}
+
+.opacity100-hover
+{
+    transition: 0.5s;
+}
+
+.opacity100-hover:hover
+{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.opacity03-hover
+{
+    transition: 0.5s;
+}
+
+.opacity03-hover:hover
+{
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+/* Border */
+
+.solid-black
+{
+    border: 1px solid black;
+}
+
+.solid-black-2px
+{
+    border: 2px solid black;
+}
+
+.solid-white
+{
+    border: 1px solid white;
+}
+
+.solid-red
+{
+    border: 1px solid rgb(184, 39, 39);
+}
+
+.radius-20px
+{
+    border-radius: 20px;
+}
+
+.dotted
+{
+    border: 1px solid black;
+    border-style: dotted;
+}
+
+.box-shadow
+{
+    box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
+}
+
+/* Text */
+
+.font-family-GL
+{
+    font-family: GeomanistLight;
+}
+
+.font-family-GT
+{
+    font-family: GeomanistThin;
+}
+
+.text-align-center
+{
+    text-align: center;
+}
+
+.text-decor-none
+{
+    text-decoration: none;
+}
+
+.font-size-15px
+{
+    font-size: 15px;
+}
+
+.font-size-20px
+{
+    font-size: 20px;
+}
+
+.font-size-25px
+{
+    font-size: 25px;
+}
+
+.font-size-30px
+{
+    font-size: 30px;
+}
+
+.font-size-35px
+{
+    font-size: 35px;
+}
+
+.font-size-40px
+{
+    font-size: 40px;
+}
+
+.font-size-45px
+{
+    font-size: 45px;
+}
+
+.font-size-50px
+{
+    font-size: 50px;
+}
+
+.font-size-55px
+{
+    font-size: 55px;
+}
+
+.font-size-60px
+{
+    font-size: 60px;
+}
+
+.font-size-65px
+{
+    font-size: 65px;
+}
+
+.font-size-70px
+{
+    font-size: 70px;
+}
+
+.font-size-75px
+{
+    font-size: 75px;
+}
+
+.font-size-80px
+{
+    font-size: 80px;
+}
+
+/* Padding & Margin */
+
+.pad-0px
+{
+    padding: 0px;
+}
+
+.pad-5px
+{
+    padding: 5px;
+}
+
+.pad-10px
+{
+    padding: 10px;
+}
+
+.pad-15px
+{
+    padding: 15px;
+}
+
+.pad-20px
+{
+    padding: 20px;
+}
+
+.pad-25px
+{
+    padding: 25px;
+}
+
+.pad-30px
+{
+    padding: 30px;
+}
+
+.pad-35px
+{
+    padding: 35px;
+}
+
+.pad-40px
+{
+    padding: 40px;
+}
+
+.pad-45px
+{
+    padding: 45px;
+}
+
+.pad-0500px
+{
+    padding: 0px 500px 0px 0px;
+}
+
+.margin-0px
+{
+    margin: 0px;
+}
+
+.marg-5px
+{
+    margin: 5px;
+}
+
+.marg-10px
+{
+    margin: 10px;
+}
+
+.marg-15px
+{
+    margin: 15px;
+}
+
+.marg-20px
+{
+    margin: 20px;
+}
+
+.marg-25px
+{
+    margin: 25px;
+}
+
+.marg-30px
+{
+    margin: 30px;
+}
+
+.marg-35px
+{
+    margin: 35px;
+}
+
+.marg-40px
+{
+    margin: 40px;
+}
+
+.marg-45px
+{
+    margin: 45px;
+}
+
+.marg-50px
+{
+    margin: 50px;
+}
+
+/* Left & Right */
+
+.left-0px
+{
+    left: 0px;
+}
+
+.left-5px
+{
+    left: 5px;
+}
+
+.left-10px
+{
+    left: 10px;
+}
+
+.left-15px
+{
+    left: 15px;
+}
+
+.left-20px
+{
+    left: 20px;
+}
+
+.left-25px
+{
+    left: 25px;
+}
+
+.left-30px
+{
+    left: 30px;
+}
+
+.left-35px
+{
+    left: 35px;
+}
+
+.left-40px
+{
+    left: 40px;
+}
+
+.left-45px
+{
+    left: 45px;
+}
+
+.left-50px
+{
+    left: 50px;
+}
+
+.left--5px
+{
+    left: -5px;
+}
+
+.left--10px
+{
+    left: -10px;
+}
+
+.left--15px
+{
+    left: -15px;
+}
+
+.left--20px
+{
+    left: -20px;
+}
+
+.left--25px
+{
+    left: -25px;
+}
+
+.left--30px
+{
+    left: -30px;
+}
+
+.left--35px
+{
+    left: -35px;
+}
+
+.left--40px
+{
+    left: -40px;
+}
+
+.left--45px
+{
+    left: -45px;
+}
+
+.left--50px
+{
+    left: -50px;
+}
+
+.left-0
+{
+    left: 0%;
+}
+
+.left-5
+{
+    left: 5%;
+}
+
+.left-10
+{
+    left: 10%;
+}
+
+.left-15
+{
+    left: 15%;
+}
+
+.left-20
+{
+    left: 20%;
+}
+
+.left-25
+{
+    left: 25%;
+}
+
+.left-30
+{
+    left: 30%;
+}
+
+.left-35
+{
+    left: 35%;
+}
+
+.left-40
+{
+    left: 40%;
+}
+
+.left-45
+{
+    left: 45%;
+}
+
+.left-50
+{
+    left: 50%;
+}
+
+.left-55
+{
+    left: 55%;
+}
+
+.left-60
+{
+    left: 60%;
+}
+
+.left-65
+{
+    left: 65%;
+}
+
+.left-70
+{
+    left: 70%;
+}
+
+.left-75
+{
+    left: 75%;
+}
+
+.left-80
+{
+    left: 85%;
+}
+
+.left-90
+{
+    left: 90%;
+}
+
+.left-95
+{
+    left: 95%;
+}
+
+.left-100
+{
+    left: 100%;
+}
+
+.left--5
+{
+    left: -5%;
+}
+
+.left--10
+{
+    left: -10%;
+}
+
+.left--15
+{
+    left: -15%;
+}
+
+.left--20
+{
+    left: -20%;
+}
+
+.left--25
+{
+    left: -25%;
+}
+
+.left--30
+{
+    left: -30%;
+}
+
+.left--35
+{
+    left: -35%;
+}
+
+.left--40
+{
+    left: -40%;
+}
+
+.left--45
+{
+    left: -45%;
+}
+
+.left--50
+{
+    left: -50%;
+}
+
+.left--55
+{
+    left: -55%;
+}
+
+.left--60
+{
+    left: -60%;
+}
+
+.left--65
+{
+    left: -65%;
+}
+
+.left--70
+{
+    left: -70%;
+}
+
+.left--75
+{
+    left: -75%;
+}
+
+.left--80
+{
+    left: -85%;
+}
+
+.left--90
+{
+    left: -90%;
+}
+
+.left--95
+{
+    left: -95%;
+}
+
+.left--100
+{
+    left: -100%;
+}
+
+.right-0px
+{
+    right: 0px;
+}
+
+.right-5px
+{
+    right: 5px;
+}
+
+.right-10px
+{
+    right: 10px;
+}
+
+.right-15px
+{
+    right: 15px;
+}
+
+.right-20px
+{
+    right: 20px;
+}
+
+.right-25px
+{
+    right: 25px;
+}
+
+.right-30px
+{
+    right: 30px;
+}
+
+.right-35px
+{
+    right: 35px;
+}
+
+.right-40px
+{
+    right: 40px;
+}
+
+.right-45px
+{
+    right: 45px;
+}
+
+.right-50px
+{
+    right: 50px;
+}
+
+.right--5px
+{
+    right: -5px;
+}
+
+.right--10px
+{
+    right: -10px;
+}
+
+.right--15px
+{
+    right: -15px;
+}
+
+.right--20px
+{
+    right: -20px;
+}
+
+.right--25px
+{
+    right: -25px;
+}
+
+.right--30px
+{
+    right: -30px;
+}
+
+.right--35px
+{
+    right: -35px;
+}
+
+.right--40px
+{
+    right: -40px;
+}
+
+.right--45px
+{
+    right: -45px;
+}
+
+.right--50px
+{
+    right: -50px;
+}
+
+.right-0
+{
+    right: 0%;
+}
+
+.right-5
+{
+    right: 5%;
+}
+
+.right-10
+{
+    right: 10%;
+}
+
+.right-15
+{
+    right: 15%;
+}
+
+.right-20
+{
+    right: 20%;
+}
+
+.right-25
+{
+    right: 25%;
+}
+
+.right-30
+{
+    right: 30%;
+}
+
+.right-35
+{
+    right: 35%;
+}
+
+.right-40
+{
+    right: 40%;
+}
+
+.right-45
+{
+    right: 45%;
+}
+
+.right-50
+{
+    right: 50%;
+}
+
+.right-55
+{
+    right: 55%;
+}
+
+.right-60
+{
+    right: 60%;
+}
+
+.right-65
+{
+    right: 65%;
+}
+
+.right-70
+{
+    right: 70%;
+}
+
+.right-75
+{
+    right: 75%;
+}
+
+.right-80
+{
+    right: 85%;
+}
+
+.right-90
+{
+    right: 90%;
+}
+
+.right-95
+{
+    right: 95%;
+}
+
+.right-100
+{
+    right: 100%;
+}
+
+.right--5
+{
+    right: -5%;
+}
+
+.right--10
+{
+    right: -10%;
+}
+
+.right--15
+{
+    right: -15%;
+}
+
+.right--20
+{
+    right: -20%;
+}
+
+.right--25
+{
+    right: -25%;
+}
+
+.right--30
+{
+    right: -30%;
+}
+
+.right--35
+{
+    right: -35%;
+}
+
+.right--40
+{
+    right: -40%;
+}
+
+.right--45
+{
+    right: -45%;
+}
+
+.right--50
+{
+    right: -50%;
+}
+
+.right--55
+{
+    right: -55%;
+}
+
+.right--60
+{
+    right: -60%;
+}
+
+.right--65
+{
+    right: -65%;
+}
+
+.right--70
+{
+    right: -70%;
+}
+
+.right--75
+{
+    right: -75%;
+}
+
+.right--80
+{
+    right: -85%;
+}
+
+.right--90
+{
+    right: -90%;
+}
+
+.right--95
+{
+    right: -95%;
+}
+
+.right--100
+{
+    right: -100%;
+}
+
+/* Top & Bottom */
+
+.top-0px
+{
+    top: 0px;
+}
+
+.top-5px
+{
+    top: 5px;
+}
+
+.top-10px
+{
+    top: 10px;
+}
+
+.top-15px
+{
+    top: 15px;
+}
+
+.top-20px
+{
+    top: 20px;
+}
+
+.top-25px
+{
+    top: 25px;
+}
+
+.top-30px
+{
+    top: 30px;
+}
+
+.top-35px
+{
+    top: 35px;
+}
+
+.top-40px
+{
+    top: 40px;
+}
+
+.top-45px
+{
+    top: 45px;
+}
+
+.top-50px
+{
+    top: 50px;
+}
+
+.top--5px
+{
+    top: -5px;
+}
+
+.top--10px
+{
+    top: -10px;
+}
+
+.top--15px
+{
+    top: -15px;
+}
+
+.top--20px
+{
+    top: -20px;
+}
+
+.top--25px
+{
+    top: -25px;
+}
+
+.top--30px
+{
+    top: -30px;
+}
+
+.top--35px
+{
+    top: -35px;
+}
+
+.top--40px
+{
+    top: -40px;
+}
+
+.top--45px
+{
+    top: -45px;
+}
+
+.top--50px
+{
+    top: -50px;
+}
+
+.top-0
+{
+    top: 0%;
+}
+
+.top-5
+{
+    top: 5%;
+}
+
+.top-10
+{
+    top: 10%;
+}
+
+.top-15
+{
+    top: 15%;
+}
+
+.top-20
+{
+    top: 20%;
+}
+
+.top-25
+{
+    top: 25%;
+}
+
+.top-30
+{
+    top: 30%;
+}
+
+.top-35
+{
+    top: 35%;
+}
+
+.top-40
+{
+    top: 40%;
+}
+
+.top-45
+{
+    top: 45%;
+}
+
+.top-50
+{
+    top: 50%;
+}
+
+.top-55
+{
+    top: 55%;
+}
+
+.top-60
+{
+    top: 60%;
+}
+
+.top-65
+{
+    top: 65%;
+}
+
+.top-70
+{
+    top: 70%;
+}
+
+.top-75
+{
+    top: 75%;
+}
+
+.top-80
+{
+    top: 85%;
+}
+
+.top-90
+{
+    top: 90%;
+}
+
+.top-95
+{
+    top: 95%;
+}
+
+.top-100
+{
+    top: 100%;
+}
+
+.top--5
+{
+    top: -5%;
+}
+
+.top--10
+{
+    top: -10%;
+}
+
+.top--15
+{
+    top: -15%;
+}
+
+.top--20
+{
+    top: -20%;
+}
+
+.top--25
+{
+    top: -25%;
+}
+
+.top--30
+{
+    top: -30%;
+}
+
+.top--35
+{
+    top: -35%;
+}
+
+.top--40
+{
+    top: -40%;
+}
+
+.top--45
+{
+    top: -45%;
+}
+
+.top--50
+{
+    top: -50%;
+}
+
+.top--55
+{
+    top: -55%;
+}
+
+.top--60
+{
+    top: -60%;
+}
+
+.top--65
+{
+    top: -65%;
+}
+
+.top--70
+{
+    top: -70%;
+}
+
+.top--75
+{
+    top: -75%;
+}
+
+.top--80
+{
+    top: -85%;
+}
+
+.top--90
+{
+    top: -90%;
+}
+
+.top--95
+{
+    top: -95%;
+}
+
+.top--100
+{
+    top: -100%;
+}
+
+.bottom-0px
+{
+    bottom: 0px;
+}
+
+.bottom-5px
+{
+    bottom: 5px;
+}
+
+.bottom-10px
+{
+    bottom: 10px;
+}
+
+.bottom-15px
+{
+    bottom: 15px;
+}
+
+.bottom-20px
+{
+    bottom: 20px;
+}
+
+.bottom-25px
+{
+    bottom: 25px;
+}
+
+.bottom-30px
+{
+    bottom: 30px;
+}
+
+.bottom-35px
+{
+    bottom: 35px;
+}
+
+.bottom-40px
+{
+    bottom: 40px;
+}
+
+.bottom-45px
+{
+    bottom: 45px;
+}
+
+.bottom-50px
+{
+    bottom: 50px;
+}
+
+.bottom--5px
+{
+    bottom: -5px;
+}
+
+.bottom--10px
+{
+    bottom: -10px;
+}
+
+.bottom--15px
+{
+    bottom: -15px;
+}
+
+.bottom--20px
+{
+    bottom: -20px;
+}
+
+.bottom--25px
+{
+    bottom: -25px;
+}
+
+.bottom--30px
+{
+    bottom: -30px;
+}
+
+.bottom--35px
+{
+    bottom: -35px;
+}
+
+.bottom--40px
+{
+    bottom: -40px;
+}
+
+.bottom--45px
+{
+    bottom: -45px;
+}
+
+.bottom--50px
+{
+    bottom: -50px;
+}
+
+.bottom-0
+{
+    bottom: 0%;
+}
+
+.bottom-5
+{
+    bottom: 5%;
+}
+
+.bottom-10
+{
+    bottom: 10%;
+}
+
+.bottom-15
+{
+    bottom: 15%;
+}
+
+.bottom-20
+{
+    bottom: 20%;
+}
+
+.bottom-25
+{
+    bottom: 25%;
+}
+
+.bottom-30
+{
+    bottom: 30%;
+}
+
+.bottom-35
+{
+    bottom: 35%;
+}
+
+.bottom-40
+{
+    bottom: 40%;
+}
+
+.bottom-45
+{
+    bottom: 45%;
+}
+
+.bottom-50
+{
+    bottom: 50%;
+}
+
+.bottom-55
+{
+    bottom: 55%;
+}
+
+.bottom-60
+{
+    bottom: 60%;
+}
+
+.bottom-65
+{
+    bottom: 65%;
+}
+
+.bottom-70
+{
+    bottom: 70%;
+}
+
+.bottom-75
+{
+    bottom: 75%;
+}
+
+.bottom-80
+{
+    bottom: 85%;
+}
+
+.bottom-90
+{
+    bottom: 90%;
+}
+
+.bottom-95
+{
+    bottom: 95%;
+}
+
+.bottom-100
+{
+    bottom: 100%;
+}
+
+.bottom--5
+{
+    bottom: -5%;
+}
+
+.bottom--10
+{
+    bottom: -10%;
+}
+
+.bottom--15
+{
+    bottom: -15%;
+}
+
+.bottom--20
+{
+    bottom: -20%;
+}
+
+.bottom--25
+{
+    bottom: -25%;
+}
+
+.bottom--30
+{
+    bottom: -30%;
+}
+
+.bottom--35
+{
+    bottom: -35%;
+}
+
+.bottom--40
+{
+    bottom: -40%;
+}
+
+.bottom--45
+{
+    bottom: -45%;
+}
+
+.bottom--50
+{
+    bottom: -50%;
+}
+
+.bottom--55
+{
+    bottom: -55%;
+}
+
+.bottom--60
+{
+    bottom: -60%;
+}
+
+.bottom--65
+{
+    bottom: -65%;
+}
+
+.bottom--70
+{
+    bottom: -70%;
+}
+
+.bottom--75
+{
+    bottom: -75%;
+}
+
+.bottom--80
+{
+    bottom: -85%;
+}
+
+.bottom--90
+{
+    bottom: -90%;
+}
+
+.bottom--95
+{
+    bottom: -95%;
+}
+
+.bottom--100
+{
+    bottom: -100%;
+}
+
+/* Height & Width */
+
+.height-0
+{
+    height: 0%;
+}
+
+.height-10
+{
+    height: 10%;
+}
+
+.height-20
+{
+    height: 20%;
+}
+
+.height-30
+{
+    height: 30%;
+}
+
+.height-40
+{
+    height: 40%;
+}
+
+.height-50
+{
+    height: 50%;
+}
+
+.height-60
+{
+    height: 60%;
+}
+
+.height-70
+{
+    height: 70%;
+}
+
+.height-80
+{
+    height: 80%;
+}
+
+.height-90
+{
+    height: 90%;
+}
+
+.height-100
+{
+    height: 100%;
+}
+
+.width-0
+{
+    width: 0%;
+}
+
+.width-10px
+{
+    width: 10px;
+}
+
+.width-20px
+{
+    width: 20px;
+}
+
+.width-30px
+{
+    width: 30px;
+}
+
+.width-40px
+{
+    width: 40px;
+}
+
+.width-50px
+{
+    width: 50px;
+}
+
+
+.width-10
+{
+    width: 10%;
+}
+
+.width-20
+{
+    width: 20%;
+}
+
+.width-30
+{
+    width: 30%;
+}
+
+.width-40
+{
+    width: 40%;
+}
+
+.width-50
+{
+    width: 50%;
+}
+
+.width-60
+{
+    width: 60%;
+}
+
+.width-70
+{
+    width: 70%;
+}
+
+.width-80
+{
+    width: 80%;
+}
+
+.width-90
+{
+    width: 90%;
+}
+
+.width-91
+{
+    width: 91%;
+}
+
+.width-92
+{
+    width: 92%;
+}
+
+.width-93
+{
+    width: 93%;
+}
+
+.width-94
+{
+    width: 94%;
+}
+
+.width-95
+{
+    width: 95%;
+}
+
+.width-96
+{
+    width: 96%;
+}
+
+.width-97
+{
+    width: 97%;
+}
+
+.width-98
+{
+    width: 98%;
+}
+
+.width-99
+{
+    width: 99%;
+}
+
+.width-100
+{
+    width: 100%;
+}
+
+/*--------------------------- Header -------------------------*/
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0px; 
+    height: 1px; 
+    bottom: -5px; 
+    left: 0; 
+    transition: 0.3s;
+    background-color: black;
+}
+
+.nav a:hover::after {
+    width: 100%;
+    left: 0; 
+    background: black;
+}
+
+.dropdown-menu a
+{
+    font-size: 17px;
+}
+
+.nav .dropdown:hover .dropdown-menu
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.down-arrow
+{
+    width: 17px;
+}
+
+.search-container:hover
+{
+    width: 170px;
+    transition: 0.5s;
+}
+
+.search-bar
+{
+    padding: 7px; 
+}
+/*---------------------------- Main ---------------------------*/
+
+main
+{
+    background-size: 1600px;
+    background-position: 0px -840px;
+    height: 100%;
+    background-image: url(/Assets/Images/2.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.main-text
+{
+    right: -65%;
+    font-size: 50px;
+    padding: 30px; 
+    font-family: GeomanistThin;
+}
+
+.main-text blockquote
+{
+    margin: 100px;
+}
+
+.main-jewellery
+{
+    background-size: 1600px;
+    background-position: -0px -800px;
+    height: 50%;
+    background-image: url(/Assets/Images/necklace.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.jewellery-text
+{
+    font-size: 70px;
+}
+
+.earing
+{
+    background-size: 1600px;
+    background-position: -100px -650px;
+    height: 50%;
+    background-image: url(/Assets/Images/8.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.ring
+{
+    background-size: 1600px;
+    background-position: 0px -550px;
+    height: 50%;
+    background-image: url(/Assets/Images/7.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.bracelet
+{
+    background-size: 1600px;
+    background-position: 0px -1200px;
+    height: 50%;
+    background-image: url(/Assets/Images/9.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.womens-watches
+{
+    background-size: 1600px;
+    background-position: 0px -600px;
+    height: 50%;
+    background-image: url(/Assets/Images/10.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.mens-watches
+{
+    background-size: 1600px;
+    background-position: 0px -750px;
+    height: 50%;
+    background-image: url(/Assets/Images/11.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.watch-straps
+{
+    background-size: 1600px;
+    background-position: 0px -350px;
+    height: 50%;
+    background-image: url(/Assets/Images/12.jpg);
+    overflow: hidden;  
+    scroll-snap-align: center;
+}
+
+.hair-accessories
+{
+    background-size: 1600px;
+    background-position: 0px -700px;
+    height: 50%;
+    background-image: url(/Assets/Images/14.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.shoping-cart
+{
+    background-size: 1600px;
+    background-position: 0px -400px;
+    height: 50%;
+    background-image: url(/Assets/Images/donate.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.wishlist
+{
+    background-size: 1600px;
+    background-position: 0px -700px;
+    height: 40%;
+    background-image: url(/Assets/Images/heart.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.body-jewel
+{
+    background-size: 1600px;
+    background-position: 0px -850px;
+    height: 50%;
+    background-image: url(/Assets/Images/15.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.tech 
+{
+    background-size: 1600px;
+    background-position: 0px -1000px;
+    height: 50%;
+    background-image: url(/Assets/Images/applewatch1.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.key-rings
+{
+    background-size: 1600px;
+    background-position: 0px -1100px;
+    height: 50%;
+    background-image: url(/Assets/Images/16.jpg);
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.home-decor
+{
+    background-size: 1600px;
+    background-position: 0px -800px;
+    height: 50%;
+    background-image: url(/Assets/Images/17.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.nature
+{
+    background-size: 1600px;
+    background-position: 0px -200px;
+    height: 50%;
+    background-image: url(/Assets/Images/18.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.figurines
+{
+    background-size: 1600px;
+    background-position: 0px -500px;
+    height: 50%;
+    background-image: url(/Assets/Images/19.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+.zodiac
+{
+    background-size: 1600px;
+    background-position: 0px -240px;
+    height: 50%;
+    background-image: url(/Assets/Images/20.jpg);
+    overflow: hidden; 
+    scroll-snap-align: center;
+}
+
+
+/*---------------------------- Section ------------------------*/
+
+section
+{
+    box-shadow: 0px 0px 2px 0px rgb(0, 0, 0, 0.5);
+    background-color: white;
+    z-index: 1;
+    scroll-snap-align: center;
+}
+
+section .col
+{
+    font-size: 18px;
+    margin: 40px 0px 0px;
+}
+
+section p
+{
+    position: relative;
+    top: -20px;
+}
+
+section img
+{
+    width: 50px;
+    margin: 10px;
+}
+
+/*------------------------------- Containers -------------------*/
+.container
+{
+    padding: 50px 0px 300px;
+    background-color: #FBFAF3;
+}
+
+.container-with-logos
+{
+   background-color:#FBFAF3;
+}
+
+.container-with-logos img
+{
+    width: 150px;
+    transition: 0.5s;
+}
+
+.container .col1
+{
+    margin: 20px;
+}
+
+.container .col2
+{
+    bottom: -250px;
+    margin: 20px;
+}
+
+.container img
+{
+    position: relative;
+    width: 400px;
+    transition: 0.5s;
+}
+
+.container img:hover 
+{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.container p1
+{
+    right: 200px;
+    top: 140px;
+    font-size: 40px;
+}
+
+.container p2
+{
+    left: 230px;
+    bottom: 100px;
+    font-size: 40px;
+}
+
+.container a
+{
+    bottom: 550px;
+    right: 640px;
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container p3
+{
+    bottom: 450px;
+    right: 673px;
+    font-size: 20px;
+    padding: 0px;
+    scroll-snap-align: center;
+}
+
+.container a:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+/*------------------------------- Best Sellers -----------------*/
+
+.best-sellers
+{
+    padding: 30px;
+    z-index: 1;
+}
+
+.best-sellers h
+{
+    font-size: 40px;
+}
+
+.best-seller h, p
+{
+    font-size: 20px;
+}
+
+/*-------------------------------- Products ---------------------*/
+
+.products
+{
+    scroll-snap-align: center;
+    background-color:#FBFAF3;
+    padding: 10px;
+}
+
+.products .col3, .col4, .col5, .col6, .col7, .col8, .col9, 
+.col10, .col11, .col12, .col13, .col14, .col15, .col16, .col17,
+.col18, .col19, .col20, .col21, .col22, .col23, .col24, .col25, 
+.col26, .col27, .col28, .col29, .col30, .col31, .col32, .col33,
+.col34, .col35, .col36, .col37, .col38, .col39, .col40, .col41,
+.col42, .col43, .col44, .col45, .col46, .col47, .col48, .col49,
+.col50, .col51, .col52, .col53, .col54, .col55, .col56, .col57,
+.col58, .col59, .col60, .col61, .col62, .col63, .col64, .col65,
+.col66, .col67, .col68, .col69, .col70, .col71, .col72, .col73,
+.col74, .col75, .col76, .col77, .col78, .col79, .col80, .col81,
+.col82, .col83, .col84, .col85, .col86, .col87, .col88, .col89,
+.col90, .col91, .col92, .col93, .col94, .col95, .col96, .col97,
+.col98, .col99, .col100, .col101, .col102, .col103, .col104,
+.col105, .col106, .col107, .col108, .col109, .col110, .col111,
+.col112, .col113, .col114, .col115, .col116, .col117, .col118
+
+{
+    scroll-snap-align: center;
+    padding: 160px;
+    background-size: cover;
+    margin: 0px 0px 100px 0px;
+    transition: 1s;
+}
+
+.products .col3
+{
+    background-image: url(/Assets/Products/κολιέ-καρδιά1.jpg);
+    transition: 0.5s;
+}
+
+.products .col3:hover
+{
+    background-image: url(/Assets/Products/κολιέ-καρδιά.jpg);
+    transition: 0.5s;
+}
+
+.products .col3 p
+{
+    bottom: 100px;
+    left: 110px;   
+}
+
+.products .col4 
+{
+    background-image: url(/Assets/Products/σκουλαρίκι.jpg);
+    transition: 0.5s;
+}
+
+.products .col4:hover 
+{
+    background-image: url(/Assets/Products/σκουλαρίκι1.jpg);
+    transition: 0.5s;
+}
+
+.products .col4 p
+{
+    bottom: 100px;
+    left: 480px;
+}
+
+.products .col5
+{
+    background-image: url(/Assets/Products/δαχτυλίδι.jpg);
+    transition: 0.5s;
+}
+
+.products .col5:hover 
+{
+    background-image: url(/Assets/Products/δαχτυλίδι1.jpg);
+    transition: 0.5s;
+}
+
+.products .col5 p
+{
+    bottom: 100px;
+    left: 850px;
+}
+
+.products .col6
+{
+    background-image: url(/Assets/Products/swan.jpg);
+    transition: 0.5s;
+}
+
+.products .col6:hover 
+{
+    background-image: url(/Assets/Products/swan1.jpg);
+    transition: 0.5s;
+}
+
+.products .col6 p
+{
+    bottom: 100px;
+    left: 1235px;
+}
+
+.products .col7
+{
+    background-image: url(/Assets/Products/κολιέ-διαμάντια.jpg);
+    transition: 0.5s;
+}
+
+.products .col7:hover 
+{
+    background-image: url(/Assets/Products/κολιέ-διαμάντια1.jpg);
+    transition: 0.5s;
+}
+
+.products .col8
+{
+    background-image: url(/Assets/Products/κολιέ-constela.jpg);
+    transition: 0.5s;
+}
+
+.products .col8:hover 
+{
+    background-image: url(/Assets/Products/κολιέ-constela1.jpg);
+    transition: 0.5s;
+}
+
+
+.products .col9
+{
+    background-image: url(/Assets/Products/μενταγιόν-insigne.jpg);
+    transition: 0.5s;
+}
+
+.products .col9:hover 
+{
+    background-image: url(/Assets/Products/μενταγιόν-insigne1.jpg);
+    transition: 0.5s;
+}
+
+.products .col10
+{
+    background-image: url(/Assets/Products/μενταγιόν-stilla.jpg);
+    transition: 0.5s;
+}
+
+.products .col10:hover 
+{
+    background-image: url(/Assets/Products/μενταγιόν-stilla1.jpg);
+    transition: 0.5s;
+}
+
+.products .col11
+{
+    background-image: url(/Assets/Products/κολιέ-imber.jpg);
+    transition: 0.5s;
+}
+
+.products .col11:hover 
+{
+    background-image: url(/Assets/Products/κολιέ-imber1.jpg);
+    transition: 0.5s;
+}
+
+.products .col12
+{
+    background-image: url(/Assets/Products/idyllia.jpg);
+    transition: 0.5s;
+}
+
+.products .col12:hover 
+{
+    background-image: url(/Assets/Products/idyllia1.jpg);
+    transition: 0.5s;
+}
+
+.products .col13
+{
+    background-image: url(/Assets/Products/sublimalayered.jpg);
+    transition: 0.5s;
+}
+
+.products .col13:hover 
+{
+    background-image: url(/Assets/Products/sublimalayered1.jpg);
+    transition: 0.5s;
+}
+
+.products .col14
+{
+    background-image: url(/Assets/Products/chromapenant.jpg);
+    transition: 0.5s;
+}
+
+.products .col14:hover 
+{
+    background-image: url(/Assets/Products/chromapenant1.jpg);
+    transition: 0.5s;
+}
+
+.products .col15
+{
+    background-image: url(/Assets/Products/Earings/idylliadrop.jpg);
+    transition: 0.5s;
+}
+
+.products .col15:hover 
+{
+    background-image: url(/Assets/Products/Earings/idylliadrop1.jpg);
+    transition: 0.5s;
+}
+
+.products .col16
+{
+    background-image: url(/Assets/Products/Earings/hyperbolahoop.jpg);
+    transition: 0.5s;
+}
+
+.products .col16:hover 
+{
+    background-image: url(/Assets/Products/Earings/hyperbolahoop1.jpg);
+    transition: 0.5s;
+}
+
+.products .col17
+{
+    background-image: url(/Assets/Products/Earings/angelicstud.jpg);
+    transition: 0.5s;
+}
+
+.products .col17:hover 
+{
+    background-image: url(/Assets/Products/Earings/angelicstud1.jpg);
+    transition: 0.5s;
+}
+
+.products .col18
+{
+    background-image: url(/Assets/Products/Earings/dexterahoop.jpg);
+    transition: 0.5s;
+}
+
+.products .col18:hover 
+{
+    background-image: url(/Assets/Products/Earings/dexterahoop1.jpg);
+    transition: 0.5s;
+}
+
+.products .col19
+{
+    background-image: url(/Assets/Products/Earings/stilladrop.jpg);
+    transition: 0.5s;
+}
+
+.products .col19:hover
+{
+    background-image: url(/Assets/Products/Earings/stilladrop1.jpg);
+    transition: 0.5s;
+}
+
+.products .col20
+{
+    background-image: url(/Assets/Products/Earings/unadrop.jpg);
+    transition: 0.5s;
+}
+
+.products .col20:hover
+{
+    background-image: url(/Assets/Products/Earings/unadrop1.jpg);
+    transition: 0.5s;
+}
+
+.products .col21
+{
+    background-image: url(/Assets/Products/Earings/milleniastud.jpg);
+    transition: 0.5s;
+}
+
+.products .col21:hover
+{
+    background-image: url(/Assets/Products/Earings/milleniastud1.jpg);
+    transition: 0.5s;
+}
+
+.products .col22
+{
+    background-image: url(/Assets/Products/Earings/dexterahoop2\ \(2\).jpg);
+    transition: 0.5s;
+}
+
+.products .col22:hover
+{
+    background-image: url(/Assets/Products/Earings/dexterahoop2.jpg);
+    transition: 0.5s;
+}
+
+.products .col23
+{
+    background-image: url(/Assets/Products/Rings/constellaring.jpg);
+    transition: 0.5s;
+}
+
+.products .col23:hover
+{
+    background-image: url(/Assets/Products/Rings/constellaring1.jpg);
+    transition: 0.5s;
+}
+
+.products .col24
+{
+    background-image: url(/Assets/Products/Rings/dexteraring.jpg);
+    transition: 0.5s;
+}
+
+.products .col24:hover
+{
+    background-image: url(/Assets/Products/Rings/dexteraring1.jpg);
+    transition: 0.5s;
+}
+
+.products .col25
+{
+    background-image: url(/Assets/Products/Rings/hyperbolaring.jpg);
+    transition: 0.5s;
+}
+
+.products .col25:hover
+{
+    background-image: url(/Assets/Products/Rings/hyperbolaring1.jpg);
+    transition: 0.5s;
+}
+
+.products .col26
+{
+    background-image: url(/Assets/Products/Rings/matrixvittore.jpg);
+    transition: 0.5s;
+}
+
+.products .col26:hover
+{
+    background-image: url(/Assets/Products/Rings/matrixvittore1.jpg);
+    transition: 0.5s;
+}
+
+.products .col27
+{
+    background-image: url(/Assets/Products/Rings/stillacocktail.jpg);
+    transition: 0.5s;
+}
+
+.products .col27:hover
+{
+    background-image: url(/Assets/Products/Rings/stillacocktail1.jpg);
+    transition: 0.5s;
+}
+
+.products .col28
+{
+    background-image: url(/Assets/Products/Rings/sublimaopen.jpg);
+    transition: 0.5s;
+}
+
+.products .col28:hover
+{
+    background-image: url(/Assets/Products/Rings/sublimaopen1.jpg);
+    transition: 0.5s;
+}
+
+.products .col29
+{
+    background-image: url(/Assets/Products/Rings/matrixcocktail.jpg);
+    transition: 0.5s;
+}
+
+.products .col29:hover
+{
+    background-image: url(/Assets/Products/Rings/matrixcocktail1.jpg);
+    transition: 0.5s;
+}
+
+.products .col30
+{
+    background-image: url(/Assets/Products/Rings/stellacocktail.jpg);
+    transition: 0.5s;
+}
+
+.products .col30:hover
+{
+    background-image: url(/Assets/Products/Rings/stellacocktail1.jpg);
+    transition: 0.5s;
+}
+
+.products .col31
+{
+    background-image: url(/Assets/Products/Bracelets/constellabangle.jpg);
+    transition: 0.5s;
+}
+
+.products .col31:hover
+{
+    background-image: url(/Assets/Products//Bracelets/constellabangle1.jpg);
+    transition: 0.5s;
+}
+
+.products .col32
+{
+    background-image: url(/Assets/Products/Bracelets/hyperbollabracelet.jpg);
+    transition: 0.5s;
+}
+
+.products .col32:hover
+{
+    background-image: url(/Assets/Products/Bracelets/hyperbollabracelet1.jpg);
+    transition: 0.5s;
+}
+
+.products .col33
+{
+    background-image: url(/Assets/Products/Bracelets/hyperbollacuff.jpg);
+    transition: 0.5s;
+}
+
+.products .col33:hover
+{
+    background-image: url(/Assets/Products/Bracelets/hyperbollacuff1.jpg);
+    transition: 0.5s;
+}
+
+.products .col34
+{
+    background-image: url(/Assets/Products/Bracelets/idylliabracelet.jpg);
+    transition: 0.5s;
+}
+
+.products .col34:hover
+{
+    background-image: url(/Assets/Products/Bracelets/idylliabracelet1.jpg);
+    transition: 0.5s;
+}
+
+.products .col35
+{
+    background-image: url(/Assets/Products/Bracelets/imberbangle.jpg);
+    transition: 0.5s;
+}
+
+.products .col35:hover
+{
+    background-image: url(/Assets/Products/Bracelets/imberbangle1.jpg);
+    transition: 0.5s;
+}
+
+.products .col36
+{
+    background-image: url(/Assets/Products/Bracelets/matrixtennis.jpg);
+    transition: 0.5s;
+}
+
+.products .col36:hover
+{
+    background-image: url(/Assets/Products/Bracelets/matrixtennis1.jpg);
+    transition: 0.5s;
+}
+
+.products .col37
+{
+    background-image: url(/Assets/Products/Bracelets/sublimabangle.jpg);
+    transition: 0.5s;
+}
+
+.products .col37:hover
+{
+    background-image: url(/Assets/Products/Bracelets/sublimabangle1.jpg);
+    transition: 0.5s;
+}
+
+.products .col38
+{
+    background-image: url(/Assets/Products/Bracelets/unabracelet.jpg);
+    transition: 0.5s;
+}
+
+.products .col38:hover
+{
+    background-image: url(/Assets/Products/Bracelets/unabracelet1.jpg);
+    transition: 0.5s;
+}
+
+.products .col39
+{
+    background-image: url(/Assets/Products/Watches/malecosmopolitan.jpg);
+    transition: 0.5s;
+}
+
+.products .col39:hover
+{
+    background-image: url(/Assets/Products/Watches/malecosmopolitan1.jpg);
+    transition: 0.5s;
+}
+
+.products .col40
+{
+    background-image: url(/Assets/Products/Watches/maledexteralux.jpg);
+    transition: 0.5s;
+}
+
+.products .col40:hover
+{
+    background-image: url(/Assets/Products/Watches/maledexteralux1.jpg);
+    transition: 0.5s;
+}
+
+.products .col41
+{
+    background-image: url(/Assets/Products/Watches/maledexteratachy.jpg);
+    transition: 0.5s;
+}
+
+.products .col41:hover
+{
+    background-image: url(/Assets/Products/Watches/maledexteratachy1.jpg);
+    transition: 0.5s;
+}
+
+.products .col42
+{
+    background-image: url(/Assets/Products/Watches/malenovachrono.jpg);
+    transition: 0.5s;
+}
+
+.products .col42:hover
+{
+    background-image: url(/Assets/Products/Watches/malenovachrono1.jpg);
+    transition: 0.5s;
+}
+
+.products .col43
+{
+    background-image: url(/Assets/Products/Watches/maleocteamoon.jpg);
+    transition: 0.5s;
+}
+
+.products .col43:hover
+{
+    background-image: url(/Assets/Products/Watches/maleocteamoon1.jpg);
+    transition: 0.5s;
+}
+
+.products .col44
+{
+    background-image: url(/Assets/Products/Watches/maledexterachrono.jpg);
+    transition: 0.5s;
+}
+
+.products .col44:hover
+{
+    background-image: url(/Assets/Products/Watches/maledexterachrono1.jpg);
+    transition: 0.5s;
+}
+
+.products .col45
+{
+    background-image: url(/Assets/Products/Watches/woattract.jpg);
+    transition: 0.5s;
+}
+
+.products .col45:hover
+{
+    background-image: url(/Assets/Products/Watches/woattract1.jpg);
+    transition: 0.5s;
+}
+
+.products .col46
+{
+    background-image: url(/Assets/Products/Watches/woclarica.jpg);
+    transition: 0.5s;
+}
+
+.products .col46:hover
+{
+    background-image: url(/Assets/Products/Watches/woclarica1.jpg);
+    transition: 0.5s;
+}
+
+.products .col47
+{
+    background-image: url(/Assets/Products/Watches/wocrystalline.jpg);
+    transition: 0.5s;
+}
+
+.products .col47:hover
+{
+    background-image: url(/Assets/Products/Watches/wocrystalline1.jpg);
+    transition: 0.5s;
+}
+
+.products .col48
+{
+    background-image: url(/Assets/Products/Watches/wodexteraasymetric.jpg);
+    transition: 0.5s;
+}
+
+.products .col48:hover
+{
+    background-image: url(/Assets/Products/Watches/wodexteraasymetric1.jpg);
+    transition: 0.5s;
+}
+
+.products .col49
+{
+    background-image: url(/Assets/Products/Watches/wodexterachain.jpg);
+    transition: 0.5s;
+}
+
+.products .col49:hover
+{
+    background-image: url(/Assets/Products/Watches/wodexterachain1.jpg);
+    transition: 0.5s;
+}
+
+.products .col50
+{
+    background-image: url(/Assets/Products/Watches/wohyperbolabangle.jpg);
+    transition: 0.5s;
+}
+
+.products .col50:hover
+{
+    background-image: url(/Assets/Products/Watches/wohyperbolabangle1.jpg);
+    transition: 0.5s;
+}
+
+.products .col51
+{
+    background-image: url(/Assets/Products/Watches/woimber.jpg);
+    transition: 0.5s;
+}
+
+.products .col51:hover
+{
+    background-image: url(/Assets/Products/Watches/woimber1.jpg);
+    transition: 0.5s;
+}
+
+.products .col52
+{
+    background-image: url(/Assets/Products/Watches/woocteachrono.jpg);
+    transition: 0.5s;
+}
+
+.products .col52:hover
+{
+    background-image: url(/Assets/Products/Watches/woocteachrono1.jpg);
+    transition: 0.5s;
+}
+
+.products .col53
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap1brown.jpg);
+    transition: 0.5s;
+}
+
+.products .col54
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap1gray.jpg);
+    transition: 0.5s;
+}
+
+.products .col55
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap1white.jpg);
+    transition: 0.5s;
+}
+
+.products .col56
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstraps1black.jpg);
+    transition: 0.5s;
+}
+
+.products .col57
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap2white.jpg);
+    transition: 0.5s;
+}
+
+.products .col58
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap2gray.jpg);
+    transition: 0.5s;
+}
+
+.products .col59
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap1green.jpg);
+    transition: 0.5s;
+}
+
+.products .col60
+{
+    background-image: url(/Assets/Products/WatchStraps/watchstrap2black.jpg);
+    transition: 0.5s;
+}
+
+.products .col61
+{
+    background-image: url(/Assets/Products/Accesories/gemahairpin.jpg);
+    transition: 0.5s;
+}
+
+.products .col61:hover
+{
+    background-image: url(/Assets/Products/Accesories/gemahairpin1.jpg);
+    transition: 0.5s;
+}
+
+.products .col62
+{
+    background-image: url(/Assets/Products/Accesories/idylliahairpin.jpg);
+    transition: 0.5s;
+}
+
+.products .col62:hover
+{
+    background-image: url(/Assets/Products/Accesories/idylliahairpin1.jpg);
+    transition: 0.5s;
+}
+
+.products .col63
+{
+    background-image: url(/Assets/Products/Accesories/body1jewel.jpg);
+    transition: 0.5s;
+}
+
+.products .col63:hover
+{
+    background-image: url(/Assets/Products/Accesories/body1jewel1.jpg);
+    transition: 0.5s;
+}
+
+.products .col64
+{
+    background-image: url(/Assets/Products/Accesories/body2jewel.jpg);
+    transition: 0.5s;
+}
+
+.products .col64:hover
+{
+    background-image: url(/Assets/Products/Accesories/body2jewel1.jpg);
+    transition: 0.5s;
+}
+
+.products .col65
+{
+    background-image: url(/Assets/Products/Accesories/milleniabelt.jpg);
+    transition: 0.5s;
+}
+
+.products .col65:hover
+{
+    background-image: url(/Assets/Products/Accesories/milleniabelt1.jpg);
+    transition: 0.5s;
+}
+
+.products .col66
+{
+    background-image: url(/Assets/Products/Tech/chain1strap.jpg);
+    transition: 0.5s;
+}
+
+.products .col66:hover
+{
+    background-image: url(/Assets/Products/Tech/chain1strap1.jpg);
+    transition: 0.5s;
+}
+
+.products .col67
+{
+    background-image: url(/Assets/Products/Tech/chain2strap.jpg);
+    transition: 0.5s;
+}
+
+.products .col67:hover
+{
+    background-image: url(/Assets/Products/Tech/chain2strap1.jpg);
+    transition: 0.5s;
+}
+
+.products .col68
+{
+    background-image: url(/Assets/Products/Tech/chain3strap.jpg);
+    transition: 0.5s;
+}
+
+.products .col68:hover
+{
+    background-image: url(/Assets/Products/Tech/chain3strap1.jpg);
+    transition: 0.5s;
+}
+
+.products .col69
+{
+    background-image: url(/Assets/Products/Tech/sparkling1case.jpg);
+    transition: 0.5s;
+}
+
+.products .col69:hover
+{
+    background-image: url(/Assets/Products/Tech/sparkling1case1.jpg);
+    transition: 0.5s;
+}
+
+.products .col70
+{
+    background-image: url(/Assets/Products/Tech/sparkling2case.jpg);
+    transition: 0.5s;
+}
+
+.products .col70:hover
+{
+    background-image: url(/Assets/Products/Tech/sparkling2case1.jpg);
+    transition: 0.5s;
+}
+
+.products .col71
+{
+    background-image: url(/Assets/Products/Tech/princess1strap.jpg);
+    transition: 0.5s;
+}
+
+.products .col71:hover
+{
+    background-image: url(/Assets/Products/Tech/princess1strap1.jpg);
+    transition: 0.5s;
+}
+
+.products .col72
+{
+    background-image: url(/Assets/Products/Tech/princess2strap.jpg);
+    transition: 0.5s;
+}
+
+.products .col72:hover
+{
+    background-image: url(/Assets/Products/Tech/princess2strap1.jpg);
+    transition: 0.5s;
+}
+
+.products .col73
+{
+    background-image: url(/Assets/Products/Tech/princess3strap.jpg);
+    transition: 0.5s;
+}
+
+.products .col73:hover
+{
+    background-image: url(/Assets/Products/Tech/princess3strap1.jpg);
+    transition: 0.5s;
+}
+
+.products .col74
+{
+    background-image: url(/Assets/Products/Keyrings/infinitebagcharm.jpg);
+    transition: 0.5s;
+}
+
+.products .col74:hover
+{
+    background-image: url(/Assets/Products/Keyrings/infinitebagcharm1.jpg);
+    transition: 0.5s;
+}
+
+.products .col75
+{
+    background-image: url(/Assets/Products/Keyrings/key1ring.jpg);
+    transition: 0.5s;
+}
+
+.products .col75:hover
+{
+    background-image: url(/Assets/Products/Keyrings/key1ring1.jpg);
+    transition: 0.5s;
+}
+
+.products .col76
+{
+    background-image: url(/Assets/Products/Keyrings/key2ring.jpg);
+    transition: 0.5s;
+}
+
+.products .col76:hover
+{
+    background-image: url(/Assets/Products/Keyrings/key2ring1.jpg);
+    transition: 0.5s;
+}
+
+.products .col77
+{
+    background-image: url(/Assets/Products/Keyrings/key3ring.jpg);
+    transition: 0.5s;
+}
+
+.products .col78
+{
+    background-image: url(/Assets/Products/Keyrings/key4ring.jpg);
+    transition: 0.5s;
+}
+
+.products .col78:hover
+{
+    background-image: url(/Assets/Products/Keyrings/key4ring1.jpg);
+    transition: 0.5s;
+}
+
+.products .col79
+{
+    background-image: url(/Assets/Products/Keyrings/mathildebagcharm.jpg);
+    transition: 0.5s;
+}
+
+.products .col80
+{
+    background-image: url(/Assets/Products/Keyrings/teddy1bagcharm.jpg);
+    transition: 0.5s;
+}
+
+.products .col80:hover
+{
+    background-image: url(/Assets/Products/Keyrings/teddy1bagcharm1.jpg);
+    transition: 0.5s;
+}
+
+.products .col81
+{
+    background-image: url(/Assets/Products/Keyrings/teddy2bagcharm.jpg);
+    transition: 0.5s;
+}
+
+.products .col81:hover
+{
+    background-image: url(/Assets/Products/Keyrings/teddy2bagcharm1.jpg);
+    transition: 0.5s;
+}
+
+.products .col82
+{
+    background-image: url(/Assets/Products/HomeDecoration/crystallinewine.jpg);
+    transition: 0.5s;
+}
+
+
+.products .col83
+{
+    background-image: url(/Assets/Products/HomeDecoration/idylliabread.jpg);
+    transition: 0.5s;
+}
+
+
+.products .col84
+{
+    background-image: url(/Assets/Products/HomeDecoration/toastingflutes.jpg);
+    transition: 0.5s;
+}
+
+.products .col85
+{
+    background-image: url(/Assets/Products/HomeDecoration/idylliavide.jpg);
+    transition: 0.5s;
+}
+
+.products .col86
+{
+    background-image: url(/Assets/Products/HomeDecoration/idyllia1bread.jpg);
+    transition: 0.5s;
+}
+
+.products .col87
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumetagere.jpg);
+    transition: 0.5s;
+}
+
+.products .col88
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumcup.jpg);
+    transition: 0.5s;
+}
+
+.products .col88:hover
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumcup1.jpg);
+    transition: 0.5s;
+}
+
+.products .col89
+{
+    background-image: url(/Assets/Products/HomeDecoration/signummug.jpg);
+    transition: 0.5s;
+}
+
+.products .col89:hover
+{
+    background-image: url(/Assets/Products/HomeDecoration/signummug1.jpg);
+    transition: 0.5s;
+}
+
+.products .col90
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumsugar.jpg);
+    transition: 0.5s;
+}
+
+.products .col90:hover
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumsugar1.jpg);
+    transition: 0.5s;
+}
+
+.products .col91
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumtea.jpg);
+    transition: 0.5s;
+}
+
+.products .col91:hover
+{
+    background-image: url(/Assets/Products/HomeDecoration/signumtea1.jpg);
+    transition: 0.5s;
+}
+
+.products .col92
+{
+    background-image: url(/Assets/Products/NatureDecoration/enchantedrose.jpg);
+    transition: 0.5s;
+}
+
+.products .col93
+{
+    background-image: url(/Assets/Products/NatureDecoration/frenchbulldog.jpg);
+    transition: 0.5s;
+}
+
+.products .col94
+{
+    background-image: url(/Assets/Products/NatureDecoration/florere130.jpg);
+    transition: 0.5s;
+}
+
+.products .col95
+{
+    background-image: url(/Assets/Products/NatureDecoration/idylliababyturtle.jpg);
+    transition: 0.5s;
+}
+
+.products .col96
+{
+    background-image: url(/Assets/Products/NatureDecoration/idylliabirdsandbutterflies.jpg);
+    transition: 0.5s;
+}
+
+.products .col97
+{
+    background-image: url(/Assets/Products/NatureDecoration/luckycat.jpg);
+    transition: 0.5s;
+}
+
+.products .col98
+{
+    background-image: url(/Assets/Products/NatureDecoration/idylliapomegranate.jpg);
+    transition: 0.5s;
+}
+
+.products .col99
+{
+    background-image: url(/Assets/Products/NatureDecoration/thelion.jpg);
+    transition: 0.5s;
+}
+
+.products .col100
+{
+    background-image: url(/Assets/Products/Figurines/bambi.jpg);
+    transition: 0.5s;
+}
+
+.products .col101
+{
+    background-image: url(/Assets/Products/Figurines/kingbob.jpg);
+    transition: 0.5s;
+}
+
+.products .col102
+{
+    background-image: url(/Assets/Products/Figurines/krisbearlove.jpg);
+    transition: 0.5s;
+}
+
+.products .col103
+{
+    background-image: url(/Assets/Products/Figurines/mrspots.jpg);
+    transition: 0.5s;
+}
+
+.products .col104
+{
+    background-image: url(/Assets/Products/Figurines/yoda.jpg);
+    transition: 0.5s;
+}
+
+.products .col105
+{
+    background-image: url(/Assets/Products/Figurines/morales.jpg);
+    transition: 0.5s;
+}
+
+.products .col106
+{
+    background-image: url(/Assets/Products/Figurines/perfectmatch.jpg);
+    transition: 0.5s;
+}
+
+.products .col107
+{
+    background-image: url(/Assets/Products/Figurines/minnionsbob.jpg);
+    transition: 0.5s;
+}
+
+.products .col108
+{
+    background-image: url(/Assets/Products/Zodiac/adohorse.jpg);
+    transition: 0.5s;
+}
+
+.products .col109
+{
+    background-image: url(/Assets/Products/Zodiac/myriaddragon.jpg);
+    transition: 0.5s;
+}
+
+.products .col110
+{
+    background-image: url(/Assets/Products/Zodiac/snake.jpg);
+    transition: 0.5s;
+}
+
+.products .col111
+{
+    background-image: url(/Assets/Products/Zodiac/dragonphoenix.jpg);
+    transition: 0.5s;
+}
+
+.products .col112
+{
+    background-image: url(/Assets/Products/Zodiac/dragon1.jpg);
+    transition: 0.5s;
+}
+
+.products .col113
+{
+    background-image: url(/Assets/Products/Zodiac/horse.jpg);
+    transition: 0.5s;
+}
+
+.products .col114
+{
+    background-image: url(/Assets/Products/Zodiac/dragon.jpg);
+    transition: 0.5s;
+}
+
+.products .col115
+{
+    background-image: url(/Assets/Products/Zodiac/myriadhorse.jpg);
+    transition: 0.5s;
+}
+
+/*------------------------------- Footer ----------------------*/
+
+footer
+{
+    scroll-snap-align: center;
+    background-color: #000000;
+    flex-direction: row;
+    row-gap: 20px;
+    padding: 150px;
+    font-family: "GeomanistLight";
+}
+
+.links a
+{
+    position: relative;
+    margin: 5px;
+    bottom: -10px;
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    width: 0px; 
+    height: 1px; 
+    bottom: -3px; 
+    left: 0; 
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255);
+}
+
+.links a:hover::after {
+    width: 100%;
+    left: 0; 
+    background: rgb(255, 255, 255);
+}
+
+.line
+{
+    border: 1px solid gray;
+    position: absolute;
+    width: 81%;
+    bottom: 100px;
+}
+
+
+.carino
+{
+    font-size: 50px;
+    bottom: 15px;
+    right: 46%;
+}
+
+.copyright
+{
+    left: 154px;
+    bottom: 30px;
+    transition: 0.5s;
+}
+
+/*------------------------------- Media -------------------------*/
+
+@media (max-width: 1500px)
+{
+    .main-text
+    {
+       right: -60%;
+       font-size: 50px;
+       padding: 30px; 
+    }
+
+    .container a
+    {
+        bottom: 550px;
+        right: 640px;
+        font-size: 20px;
+    }
+
+    .container p3
+    {
+       bottom: 470px;
+       right: 658px;
+       font-size: 15px;
+    }
+
+    .container p3 p
+    {
+       font-size: 15px;
+    }
+
+    .container p1
+    {
+       right: 190px;
+       top: 140px;
+       font-size: 40px;
+    }
+
+    .container p2
+    {
+       left: 220px;
+       bottom: 100px;
+       font-size: 40px;
+    }
+    
+    .products .col3, .col4, .col5, .col6, .col7, .col8, .col9, 
+.col10, .col11, .col12, .col13, .col14, .col15, .col16, .col17,
+.col18, .col19, .col20, .col21, .col22, .col23, .col24, .col25, 
+.col26, .col27, .col28, .col29, .col30, .col31, .col32, .col33,
+.col34, .col35, .col36, .col37, .col38, .col39, .col40, .col41,
+.col42, .col43, .col44, .col45, .col46, .col47, .col48, .col49,
+.col50, .col51, .col52, .col53, .col54, .col55, .col56, .col57,
+.col58, .col59, .col60, .col61, .col62, .col63, .col64, .col65,
+.col66, .col67, .col68, .col69, .col70, .col71, .col72, .col73,
+.col74, .col75, .col76, .col77, .col78, .col79, .col80, .col81,
+.col82, .col83, .col84, .col85, .col86, .col87, .col88, .col89,
+.col90, .col91, .col92, .col93, .col94, .col95, .col96, .col97,
+.col98, .col99, .col100, .col101, .col102, .col103, .col104,
+.col105, .col106, .col107, .col108, .col109, .col110, .col111,
+.col112, .col113, .col114, .col115, .col116, .col117, .col118
+
+    {
+       padding: 160px;
+       background-size: cover;
+       margin: 0px 0px 100px 0px;
+       transition: 1s;
+    }
+    
+    .grid-template-auto
+    {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 1400px)
+{
+    .container a
+    {
+        right: 600px;
+    }
+
+    .container p3
+    {
+       right: 618px;
+    }
+
+    .container p1
+    {
+       right: 170px;
+    }
+
+    .container p2
+    {
+       left: 190px;
+    }
+}
+
+@media (max-width: 1300px)
+{
+    main
+    {
+       background-size: 1400px;
+       background-position: 0px -700px;
+    }
+
+    .main-jewellery
+    {
+       background-size: 1400px;
+       background-position: -0px -700px;
+    }
+
+    .earing
+    {
+       background-size: 1400px;
+       background-position: -100px -550px;
+    }
+
+    .ring
+    {
+       background-size: 1400px;
+       background-position: 0px -450px;
+    }
+
+    .bracelet
+    {
+       background-size: 1400px;
+       background-position: 0px -1050px;
+    }
+
+    .womens-watches
+    {
+       background-size: 1400px;
+       background-position: 0px -550px; 
+    }
+
+    .mens-watches
+    {
+       background-size: 1400px;
+       background-position: 0px -680px; 
+    }
+
+    .watch-straps
+    {
+       background-size: 1400px;
+       background-position: 0px -300px; 
+    }
+
+    .hair-accessories
+    {
+       background-size: 1400px;
+       background-position: 0px -600px;
+    }
+
+    .shoping-cart
+    {
+       background-size: 1400px;
+       background-position: 0px -400px; 
+    }
+
+    .wishlist
+    {
+       background-size: 1400px;
+       background-position: 0px -600px;
+    }
+
+    .body-jewel
+    {
+       background-size: 1400px;
+       background-position: 0px -750px;
+    }
+
+    .tech 
+    {
+       background-size: 1400px;
+       background-position: 0px -850px;
+    }
+
+    .key-rings
+    {
+       background-size: 1400px;
+       background-position: 0px -1000px;
+    }
+
+    .home-decor
+    {
+       background-size: 1400px;
+       background-position: 0px -650px; 
+    }
+
+    .nature
+    {
+       background-size: 1400px;
+       background-position: 0px -150px;
+    }
+
+    .figurines
+    {
+       background-size: 1400px;
+       background-position: 0px -400px;
+    }
+
+    .zodiac
+    {
+       background-size: 1400px;
+       background-position: 0px -200px;
+    }
+
+    .main-text
+    {
+       right: -55%;
+    }
+
+    .container a
+    {
+        right: 560px;
+    }
+
+    .container p3
+    {
+       right: 578px;
+    }
+
+    .container p1
+    {
+       right: 150px;
+    }
+
+    .container p2
+    {
+       left: 170px;
+    }
+}
+
+@media (max-width: 1250px)
+{
+    .container a
+    {
+        right: 540px;
+    }
+
+    .container p3
+    {
+       right: 558px;
+    }
+
+    .container p3 p
+    {
+       font-size: 15px;
+    }
+
+    .container p1
+    {
+       right: 140px;
+    }
+
+    .container p2
+    {
+       left: 160px;
+    }
+}
+
+@media (max-width: 1200px)
+{
+    .container a
+    {
+        right: 510px;
+    }
+
+    .container p3
+    {
+       right: 528px;
+    }
+
+    .container p1
+    {
+       right: 120px;
+    }
+
+    .container p2
+    {
+       left: 140px;
+    }
+}
+
+@media (max-width: 1170px)
+{
+    .main-text
+    {
+       right: -60%;
+       font-size: 35px;
+       padding: 0px; 
+    }
+
+    .Cariño
+    {
+        font-size: 40px;
+    }
+
+    .dropdown a
+    {
+       font-size: 20px;
+    }
+
+    .dropdown-menu a
+    {
+       font-size: 17px;
+    }
+
+    .down-arrow
+    {
+       width: 17px;
+    }
+
+    .search
+    {
+        width: 25px;
+    }
+
+    .search-bar
+    {
+        padding: 4px; 
+    }
+
+    .container a
+    {
+        bottom: 450px;
+        right: 490px;
+        font-size: 20px;
+    }
+
+    .container p3
+    {
+       bottom: 380px;
+       right: 508px;
+       font-size: 15px;
+    }
+
+    .container p3 p
+    {
+       bottom: 450px;
+       right: 673px;
+       font-size: 15px;
+    }
+
+    .container p1
+    {
+       right: 145px;
+       top: 190px;
+       font-size: 30px;
+    }
+
+    .container p2
+    {
+       left: 165px;
+       bottom: 160px;
+       font-size: 30px;
+    }
+
+    .container img
+    {
+       width: 300px;
+    }
+
+    .links
+    {
+        font-size: 15px;
+    }
+
+    .links a
+    {
+       font-size: 13px;
+    }
+
+    .carino
+    {
+       font-size: 40px;
+       right: 46%;
+    }
+
+    .copyright
+    {
+       left: 154px;
+       bottom: 30px;
+       font-size: 15px;
+    }
+
+    .line
+    {
+       width: 73%;
+       bottom: 100px;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .container a
+    {
+        right: 460px;
+    }
+
+    .container p3
+    {
+       right: 478px;
+    }
+
+    .container p3 p
+    {
+       right: 673px;
+    }
+
+    .container p1
+    {
+       right: 135px;
+    }
+
+    .container p2
+    {
+       left: 165px;
+    }
+
+     .grid-template-auto
+    {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 1050px)
+{
+    main
+    {
+       background-size: 1200px;
+       background-position: 0px -630px;
+    }
+
+    .main-jewellery
+    {
+       background-size: 1200px;
+       background-position: -100px -600px;
+    }
+
+    .earing
+    {
+       background-size: 1200px;
+       background-position: -100px -450px;
+    }
+
+    .ring
+    {
+       background-size: 1200px;
+       background-position: -100px -350px;
+    }
+
+    .bracelet
+    {
+       background-size: 1200px;
+       background-position: -100px -870px;
+    }
+
+    .womens-watches
+    {
+       background-size: 1200px;
+       background-position: -100px -450px; 
+    }
+
+    .mens-watches
+    {
+       background-size: 1200px;
+       background-position: -100px -580px; 
+    }
+
+    .watch-straps
+    {
+       background-size: 1200px;
+       background-position: -100px -250px; 
+    }
+
+    .hair-accessories
+    {
+       background-size: 1200px;
+       background-position: -100px -500px;
+    }
+
+    .shoping-cart
+    {
+       background-size: 1200px;
+       background-position: -100px -300px; 
+    }
+
+    .wishlist
+    {
+       background-size: 1200px;
+       background-position: -100px -500px;
+    }
+
+    .body-jewel
+    {
+       background-size: 1200px;
+       background-position: -100px -650px;
+    }
+
+    .tech 
+    {
+       background-size: 1200px;
+       background-position: -100px -730px;
+    }
+
+    .key-rings
+    {
+       background-size: 1200px;
+       background-position: -100px -850px;
+    }
+
+    .home-decor
+    {
+       background-size: 1200px;
+       background-position: -100px -530px; 
+    }
+
+    .nature
+    {
+       background-size: 1200px;
+       background-position: -100px -100px;
+    }
+
+    .figurines
+    {
+       background-size: 1200px;
+       background-position: -100px -300px;
+    }
+
+    .zodiac
+    {
+       background-size: 1200px;
+       background-position: -100px -150px;
+    }
+
+    .Cariño
+    {
+        right: -5px;
+        font-size: 40px;
+    }
+
+    .dropdown a
+    {
+       display: none;
+    }
+
+    .dropdown-menu a
+    {
+       font-size: 17px;
+    }
+
+    .down-arrow
+    {
+       display: none;
+    }
+
+    .search
+    {
+        width: 25px;
+    }
+
+    .search-bar
+    {
+        padding: 4px; 
+    }
+
+    .container a
+    {
+        right: 430px;
+    }
+
+    .container p3
+    {
+       right: 448px;
+    }
+
+    .container p3 p
+    {
+       right: 673px;
+    }
+
+    .container p1
+    {
+       right: 110px;
+    }
+
+    .container p2
+    {
+       left: 140px;
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .container a
+    {
+        right: 410px;
+    }
+
+    .container p3
+    {
+       right: 428px;
+    }
+
+    .container p3 p
+    {
+       right: 673px;
+    }
+
+    .container p1
+    {
+       right: 100px;
+    }
+
+    .container p2
+    {
+       left: 125px;
+    }
+
+    footer
+    {
+        padding: 100px;
+    }
+
+    .line
+    {
+       width: 80%;
+       bottom: 70px;
+    }
+
+    .carino
+    {
+       font-size: 40px;
+       right: 45%;
+    }
+
+    .copyright
+    {
+       left: 104px;
+       bottom: 30px;
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 970px)
+{
+    .jewellery-text
+    {
+       top: 300px;
+       font-size: 40px;
+    }
+
+    .container a
+    {
+        display: none;
+    }
+
+    .container p3
+    {
+       display: none;
+    }
+
+    .container p1
+    {
+       right: 100px;
+    }
+
+    .container p2
+    {
+       left: 125px;
+    }
+}
+
+@media (max-width: 950px)
+{
+    .container p1
+    {
+       right: 90px;
+    }
+
+    .container p2
+    {
+       left: 125px;
+    }
+
+    .grid-template-auto
+    {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 900px)
+{
+    main
+    {
+       background-size: 1000px;
+       background-position: 0px -530px;
+    }
+
+    .main-text
+    {
+       right: -55%;
+    }
+
+    .container p1
+    {
+       right: 70px;
+    }
+
+    .container p2
+    {
+       left: 95px;
+    }
+
+    .container-with-logos img
+    {
+       width: 100px;
+       transition: 0.5s;
+    }
+
+    footer
+    {
+        padding: 80px;
+    }
+
+    .line
+    {
+       width: 81%;
+       bottom: 60px;
+    }
+
+    .carino
+    {
+       font-size: 40px;
+       right: 45%;
+    }
+
+    .copyright
+    {
+       left: 84px;
+       bottom: 30px;
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 850px)
+{
+    .main-text
+    {
+       right: -65%;
+       padding: 0px; 
+    }
+
+    .main-text blockquote
+    {
+       margin: 30px;
+    }
+
+    section .col
+    {
+       font-size: 15px;
+    }
+
+    section p
+    {
+       font-size: 15px;
+    }
+
+    section img
+    {
+       width: 40px;
+       margin: 10px;
+    }
+
+    .container p1
+    {
+       right: 50px;
+    }
+
+    .container p2
+    {
+       left: 85px;
+    }
+
+    .links a
+    {
+        display: none;
+    }
+
+    .line
+    {
+       width: 82%;
+       bottom: 60px;
+    }
+
+    .carino
+    {
+       font-size: 40px;
+       right: 10%;
+    }
+
+    .copyright
+    {
+       left: 84px;
+       bottom: 30px;
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .main-text
+    {
+       right: -60%;
+    }
+
+    .main-jewellery
+    {
+       background-size: 1000px;
+       background-position: -150px -500px;
+    }
+
+    .earing
+    {
+       background-size: 1000px;
+       background-position: -100px -330px;
+    }
+
+    .ring
+    {
+       background-size: 1000px;
+       background-position: -80px -250px;
+    }
+
+    .bracelet
+    {
+       background-size: 1000px;
+       background-position: -100px -700px;
+    }
+
+    .womens-watches
+    {
+       background-size: 1000px;
+       background-position: -150px -350px; 
+    }
+
+    .mens-watches
+    {
+       background-size: 1000px;
+       background-position: -150px -490px; 
+    }
+
+    .watch-straps
+    {
+       background-size: 1000px;
+       background-position: -80px -150px; 
+    }
+
+    .hair-accessories
+    {
+       background-size: 1000px;
+       background-position: -160px -400px;
+    }
+
+    .shoping-cart
+    {
+       background-size: 1000px;
+       background-position: -150px -200px; 
+    }
+
+    .wishlist
+    {
+       background-size: 1000px;
+       background-position: -150px -300px;
+    }
+
+    .body-jewel
+    {
+       background-size: 1000px;
+       background-position: -150px -450px;
+    }
+
+    .tech 
+    {
+       background-size: 1000px;
+       background-position: -150px -600px;
+    }
+
+    .key-rings
+    {
+       background-size: 1000px;
+       background-position: -150px -700px;
+    }
+
+    .home-decor
+    {
+       background-size: 1000px;
+       background-position: -150px -400px; 
+    }
+
+    .nature
+    {
+       background-size: 1000px;
+       background-position: -150px -50px;
+    }
+
+    .figurines
+    {
+       background-size: 1000px;
+       background-position: -150px -180px;
+    }
+
+    .zodiac
+    {
+       background-size: 1000px;
+       background-position: -180px -100px;
+    }
+
+    .container p1
+    {
+       right: 30px;
+    }
+
+    .container p2
+    {
+       left: 75px;
+    }
+}
+
+@media (max-width: 750px)
+{
+    main
+    {
+       background-size: 800px;
+       background-position: 0px -420px;
+    }
+
+    .main-jewellery
+    {
+       background-size: 800px;
+       background-position: -50px -400px;
+    }
+
+    .main-text
+    {
+       right: -58%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .main-text
+    {
+       right: -55%;
+       font-size: 35px;
+    }
+
+    .jewellery-text
+    {
+       top: 310px;
+       font-size: 30px;
+    }
+
+    .container p1
+    {
+       right: 20px;
+    }
+
+    .container p2
+    {
+       left: 25px;
+    }
+
+    .container-with-logos img
+    {
+       width: 70px;
+       transition: 0.5s;
+    }
+
+    footer 
+    {
+        flex-direction: column;
+    }
+
+    .carino
+    {
+       display: none;
+    }
+
+    .copyright
+    {
+       left: 32%;
+       bottom: 30px;
+       font-size: 15px;
+    }
+
+    .line
+    {
+        width: 76%;
+    }
+}
+
+@media (max-width: 650px)
+{
+
+    .main-text
+    {
+       right: -52%;
+    }
+
+    section .col
+    {
+       font-size: 13px;
+    }
+
+    section p
+    {
+       font-size: 10px;
+       top: -10px;
+    }
+
+    section img
+    {
+       width: 35px;
+       margin: 10px;
+    }
+
+    .copyright
+    {
+       left: 29%;
+       bottom: 30px;
+       font-size: 15px;
+    }
+
+    .line
+    {
+        width: 73%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    main
+    {
+       background-size: 750px;
+       background-position: 0px -390px;
+    }
+
+    .main-text
+    {
+       right: -65%;
+       font-size: 20px;
+    }
+
+    .copyright
+    {
+       left: 24%;
+    }
+
+    .line
+    {
+        width: 65%;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .main-text
+    {
+       right: -60%;
+    }
+
+    .container p1
+    {
+       right: -10px;
+    }
+}
+    
+@media (max-width: 500px)
+{
+    .container p1
+    {
+       right: -10px;
+    }
+}
